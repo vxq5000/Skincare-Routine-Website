@@ -26,6 +26,7 @@
               <th>Serums</th>
               <th>Moisturizer</th>
               <th>Extras</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -36,13 +37,14 @@
                 <td>{{product.serum}}</td>
                 <td>{{product.moisturizer}}</td>
                 <td>{{product.treatment}}</td>
+                <td>      <a href="/routine/edit/{{product.id}}">Edit</a></td>
               </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
       {% for product in products %}
-      <a href="/routine/edit/{{product.id}}">Edit Your Routine</a>
+
       {% endfor %}
 </body>
 </html>

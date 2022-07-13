@@ -41,19 +41,19 @@ def editroutine(id):
     }
     return render_template("edit.html",user=User.get_by_id(user_data), product=Product.get_one(data))
 
-@app.route('/update', methods=['POST'])
-def update():
+@app.route('/update/<int:id>', methods=['POST'])
+def update(id):
     if 'user_id' not in session:
         return redirect('/logout')
     if not Product.is_valid(request.form):
-        return redirect ('/routine/new')
+        return redirect ('/home')
     data={
         "time_of_day":request.form["time_of_day"],
         "cleanser":request.form["cleanser"],
         "serum":request.form["serum"],
         "moisturizer":request.form["moisturizer"],
         "treatment":request.form["treatment"],
-        "id":session["id"]        
+        "id":id
     }
     Product.update(data)
     return redirect ('/home')
