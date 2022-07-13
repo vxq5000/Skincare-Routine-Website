@@ -31,9 +31,9 @@
             <div class="form">
               <div>
                 <label for="time_of_day">Time of Day:</label>
-                <input type="radio" name="time_of_day" value="Morning">
+                <input type="radio" name="time_of_day" value="Morning" {% if product.time_of_day== "Morning" %} checked="checked" {% endif %}>
                 <label for="time_of_day">Morning</label>
-                <input type="radio" name="time_of_day" value="NightTime">
+                <input type="radio" name="time_of_day" value="NightTime" {% if product.time_of_day== "NightTime" %} checked="checked" {% endif %}>
                 <label for="time_of_day">Nighttime</label><br>
               </div>
               <div>
@@ -46,25 +46,22 @@
                 <div>
                   <label for="serum">Serum:</label>
                   <select name="serum" id="">
-                    <option selected="{{product.serum}}">{{product.serum}}</option>
-                    <option value="Soy cleanser">Soy Cleanser</option>
-                    <option value="AHA cleanser">AHA Cleanser</option>
+                    <option value="Soy cleanser" {% if product.serum== "Soy cleanser" %} selected="selected" {% endif %}>Soy Cleanser</option>
+                    <option value="AHA cleanser"{% if product.serum == "AHA cleanser" %} selected="selected" {% endif %}>AHA Cleanser</option>
                   </select>
                 </div>
                 <div>
                   <label for="moisturizer">Moisturizer:</label>
                   <select name="moisturizer" id="">
-                    <option selected="{{product.moisturizer}}">{{product.moisturizer}}</option>
-                    <option value="Soy cleanser">Soy Cleanser</option>
-                    <option value="AHA cleanser">AHA Cleanser</option>
+                    <option value="Soy cleanser" {% if product.moisturizer== "Soy cleanser" %} selected="selected" {% endif %}>Soy Cleanser</option>
+                    <option value="AHA cleanser"{% if product.moisturizer == "AHA cleanser" %} selected="selected" {% endif %}>AHA Cleanser</option>
                   </select>
                 </div>
                 <div>
                   <label for="treatment">Extra Treatment:</label>
                   <select name="treatment" id="">
-                    <option selected="{{product.treatment}}">{{product.treatment}}</option>
-                    <option value="Soy cleanser">Soy Cleanser</option>
-                    <option value="AHA cleanser">AHA Cleanser</option>
+                    <option value="Soy cleanser" {% if product.treatment== "Soy cleanser" %} selected="selected" {% endif %}>Soy Cleanser</option>
+                    <option value="AHA cleanser"{% if product.treatment == "AHA cleanser" %} selected="selected" {% endif %}>AHA Cleanser</option>
                   </select>
                 </div>
             </div>

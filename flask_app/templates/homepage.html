@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Homepage</title>
 </head>
 <body>
     <div class="header">
         <div class="side">
-            <h1>{{user.first_name}}'s Skincare Routine</h1>
+            <h1 class="headline">{{user.first_name}}'s Skincare Routine</h1>
             <div class="buttons">
                 <a href="/routine/new"><button>Build your routine here!</button></a>
                 <a href="/logout"><button>Logout</button></a>
             </div>
         </div>
     </div>
-    <div class="table">
-        <table>
-          <thead>
+    <div class="tcontainer">
+        <table class="table">
+          <thead class="thead">
             <tr>
-              <th>Time of Day</th>
-              <th>Cleanser</th>
-              <th>Serums</th>
-              <th>Moisturizer</th>
-              <th>Extras</th>
-              <th>Actions</th>
+              <th scope="col">Time of Day</th>
+              <th scope="col">Cleanser</th>
+              <th scope="col">Serums</th>
+              <th scope="col">Moisturizer</th>
+              <th scope="col">Extras</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>

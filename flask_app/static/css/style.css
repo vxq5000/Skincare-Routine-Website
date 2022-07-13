@@ -1,0 +1,21 @@
+
+body {
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+
+}
+
+.headline {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.tcontainer{
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 300px;
+  overflow-y: auto;
+  width: 50%;
+}

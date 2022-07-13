@@ -50,16 +50,16 @@ class Product:
         if 'time_of_day' not in product:
           is_valid= False
           flash("Must select Morning or Nighttime Routine")
-        if 'cleanser' not in product:
+        if len(product['cleanser']) ==0:
           is_valid= False
-          flash("Must select Cleanser")
-        if 'serum' not in product:
+          flash("Please select Cleanser!")
+        if len(product['serum'])==0:
           is_valid= False
-          flash("Must select Serum")
-        if 'moisturizer' not in product:
+          flash("Please select Serum!")
+        if len(product['moisturizer']) ==0:
           is_valid= False
-          flash("Must select Moisturizer")
-        if 'treatment' not in product:
+          flash("You Need to Moisturize!")
+        if len(product['treatment'])==0:
           is_valid= False
-          flash("Must select Extra Treatment")
+          flash("Please Pick an Extra Treatment!")
         return is_valid   
