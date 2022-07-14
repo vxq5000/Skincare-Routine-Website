@@ -1,24 +1,65 @@
 
 body {
   background: #74ebd5;
-  background: -webkit-linear-gradient(to right,  #e2eced,#df8f9f);
-  background: linear-gradient(to right,#7cccf6,  #e0a5aa);
+  background: -webkit-linear-gradient(to right,  #f6f6f6,#70ac8d);
+  background: linear-gradient(to right,#f9f9f9,  #b3cdc0);
   min-height: 100vh;
-  color: #2b3e6e;
+  color: #3e3b3b;
+}
+
+.container{
+  display: flex;
+  width: 1000px;
+  height: auto;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+.indexbutton {
+  font-size: 20px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #d0e4db;
 }
 
 .headline {
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
 
 }
 
+.brandname{
+  text-align: center;
+  padding: none;
+  margin: 5px 200px;
+}
+
+.ethereal{
+  font-size: 90px;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.personalized{
+  font-size: 35px;
+  margin-top:0;
+  margin-bottom: 2%;
+}
+
+.register{
+  margin-left: 7%;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
 .tcontainer{
-  margin-left: 25%;
+  margin-left: 10%;
   margin-top: 5%;
-  height: 300px;
+  height: 500px;
   overflow-y: auto;
-  width: 50%;
+  width: 80%;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .routine {
@@ -41,21 +82,89 @@ body {
   font-size: 25px;
 }
 
+option, select{
+  font-size: 20px;
+  color: #3e3b3b;
+  background-color: transparent;
+}
+
+.buttons{
+  height: 100%;
+  width: 400px;
+  margin: 2%;
+  font-size: 25px;
+}
+
 a{
-  color: #213463;
+  color: #3e3b3b;
 }
 
 .form-control {
 background-color: transparent;
 border: none;
-margin-top: 8%;
 margin-left: 2%;
-font-size: 20px;
-padding: 20px;
+font-size: 25px;
 }
 
 select {
   background-color: transparent;
   border-radius: 5px;
   border-width: 2px;
+  height: 30px;
+
+}
+
+input{
+  height: 25px;
+}
+
+.form div{
+  padding: 8px;
+}
+
+.submit{
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  background-color: #99cbb1;
+}
+
+.delete{
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: #ea8f8f;
+}
+
+.add{
+  border-radius: 5px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  background-color: #99cbb1;
+}
+
+.homeimg {
+  display: flex;
+  opacity: .2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1000px;
+}
+
+.imgright {
+  display: flex;
+  opacity: .2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 1000px;
 }

@@ -8,9 +8,13 @@
     <title>Login</title>
 </head>
 <body>
+  <div class="brandname">
+    <h1 class="ethereal">Ethereal Skincare</h1>
+    <h2 class="personalized">Personalized Skincare Routine</h2>
+  </div>  
+  <h2 class="register">Register to start your beauty journey!</h2>
     <div class="container">
-        <div class="left">
-            <h1>Register</h1>
+      <div class="left">
             <form action="/register" name="register" method="post">
                 <div class="flash">
                     {% with messages = get_flashed_messages(category_filter=['register']) %}     
@@ -43,12 +47,11 @@
                         <input type="password" name="confirm">
                     </div>
                 </div>
-                <input type="submit" value="Register" class="buttons">
+                <input class="indexbutton"type="submit" value="Register">
             </form>
         </div>
 
         <div class="right">
-            <h1>Login</h1>
             <form action="/login" name="login" method="post">
                 <div class="flash">
                     {% with messages = get_flashed_messages(category_filter=['login']) %}     
@@ -69,9 +72,10 @@
                         <input type="password" name="password">
                     </div>
                 </div>
-                <input type="submit" value="Login" class="buttons">
+                <input class="indexbutton" type="submit" value="Login">
             </form>
         </div>
     </div>
+    <img class="imgright" src="https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBsYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="plant">
 </body>
 </html>
