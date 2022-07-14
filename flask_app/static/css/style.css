@@ -1,15 +1,16 @@
 
 body {
   background: #74ebd5;
-  background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5);
-  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  background: -webkit-linear-gradient(to right,  #e2eced,#df8f9f);
+  background: linear-gradient(to right,#7cccf6,  #e0a5aa);
   min-height: 100vh;
-
+  color: #2b3e6e;
 }
 
 .headline {
   margin-top: 5%;
   text-align: center;
+
 }
 
 .tcontainer{
@@ -18,4 +19,43 @@ body {
   height: 300px;
   overflow-y: auto;
   width: 50%;
+}
+
+.routine {
+  text-align: right;
+  margin-right: 25%;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.topnav {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin: 2%;
+  font-size: 25px;
+}
+
+a{
+  color: #213463;
+}
+
+.form-control {
+background-color: transparent;
+border: none;
+margin-top: 8%;
+margin-left: 2%;
+font-size: 20px;
+padding: 20px;
+}
+
+select {
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 2px;
 }

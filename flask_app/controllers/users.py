@@ -43,7 +43,7 @@ def dash():
     data={
         'id':session['user_id']
     }
-    return render_template("homepage.html", user=User.get_by_id(data), products=Product.get_all())
+    return render_template("homepage.html", user=User.get_by_id(data), products=Product.get_all(data))
     
 
 @app.route('/logout')

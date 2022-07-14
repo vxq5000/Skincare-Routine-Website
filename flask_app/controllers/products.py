@@ -40,7 +40,7 @@ def editroutine(id):
         "id":session['user_id']
     }
     return render_template("edit.html",user=User.get_by_id(user_data), product=Product.get_one(data))
-
+    
 @app.route('/update/<int:id>', methods=['POST'])
 def update(id):
     if 'user_id' not in session:

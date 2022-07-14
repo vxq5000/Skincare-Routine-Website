@@ -26,9 +26,9 @@ class Product:
         return cls(results[0])
 
     @classmethod
-    def get_all(cls):
-        query="SELECT * FROM products;"
-        results= connectToMySQL('routine').query_db(query)
+    def get_all(cls,data):
+        query="SELECT * FROM products where user_id=%(id)s;"
+        results= connectToMySQL('routine').query_db(query,data)
         products=[]
         for row in results:
             products.append(cls(row))

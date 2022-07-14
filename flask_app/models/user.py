@@ -19,15 +19,6 @@ class User:
         return connectToMySQL('routine').query_db(query,data)
 
     @classmethod
-    def get_all(cls):
-        query= "SELECT * from users;"
-        results= connectToMySQL('routine').query_db(query)
-        users=[]
-        for row in results:
-            users.append(cls(row))
-        return users
-
-    @classmethod
     def get_by_email(cls,data):
         query = "SELECT * FROM users WHERE email = %(email)s;"
         results = connectToMySQL('routine').query_db(query,data)
