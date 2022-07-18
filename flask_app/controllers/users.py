@@ -44,6 +44,15 @@ def dash():
         'id':session['user_id']
     }
     return render_template("homepage.html", user=User.get_by_id(data), products=Product.get_all(data))
+
+@app.route('/products')
+def productinfo():
+    if 'user_id' not in session:
+        return redirect('/logout')
+    data={
+        'id':session['user_id']
+    }
+    return render_template("productinfo.html")
     
 
 @app.route('/logout')

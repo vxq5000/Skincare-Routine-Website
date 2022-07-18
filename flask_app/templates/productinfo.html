@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Product Information</title>
+</head>
+<body>
+<div class="buttons">
+  <a href="/home">Home |</a>
+  <a href="/logout">Logout</a>
+</div>
+<div class="productheader">
+<h1>Skincare Products by Concern</h1>
+<h2>Click on tabs to learn more about products to help with each skincare concern</h2>
+</div>
+<div class="tabs">
+
+  <div class="tab">
+    <input type="radio" id="tab-1" name="tab-group-1" checked>
+    <label for="tab-1">Acne</label>
+
+    <div class="content">
+      <h2 class="title">Suggested Products for Acne</h2>
+      <div class="groups">
+        <div class="details">
+        <h3>Cleanser:</h3>
+        <p class="productname">CeraVe SA Cleanser</p>
+        <p class="body">This gentle cleanser contains salicylic acid which can help exfoliate and smooth your skin while removing oil and dirt. Salicylic acid is a key ingredient that helps fight against acne by unclogging your pores and destroying acne-causing sebum.  </p>
+        </div>
+        <div class="icon">
+          <img class="icon" src="{{ url_for('static', filename='img/cerave.png') }}" alt="">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Serum:</h3>
+          <p class="productname">Drunk Elephant TLC Serum</p>
+          <p class="body">An AHA/BHA night serum that resurfaces dull, congested skin by gently lifting away dead skill cells. Alpha hydroxy acids(AHA) and beta hydroxy adcids(BHA) are both used to treat conditions such as acne to improve the texture of skin.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/tlc.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Moisturizer:</h3>
+          <p class="productname">Paula's Choice Oil-Free Moisturizer</p>
+          <p class="body">This moisturizer provides hydration without clogging pores or causing breakouts. This moisturizer corrects issues unique to acne-prone skin. Oil-Free products are a must have if you have acne-prone skin.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/oilfreepaula.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Additional Treatment:</h3>
+          <p class="productname">Peace Out Acne Patches</p>
+          <p class="body">This is a great product if you want to get rid of a zit overnight. These dots contain salicylic acide to penetrate pores and clear up blemishes. It also contains retinol to promote clear-looking skin and aloe very to soothe and minimize redness. Just put one on before bed and you should have clearer looking skin when you wake up in the morning.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/peaceout.png') }}" alt="" class="icon">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-2" name="tab-group-1">
+    <label for="tab-2">Pores</label>
+
+    <div class="content">
+      <h2 class="title">Suggested Products for Large Pores</h2>
+      <div class="groups">
+        <div class="details">
+          <h3>Cleanser:</h3>
+          <p class="productname">Kate Somerville Exfolikate Cleanser</p>
+          <p class="body">This cleanser gently removes impurities, oil, and makeup. It helps reduce the appearance of pores and clears buildup with the help of glycolic and lactic acid. This is less abrasive than an exfoliant and can be used daily. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/exfolikate.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Serum:</h3>
+          <p class="productname">The Ordinary Niacinamide</p>
+          <p class="body">Helps reduce the signs of congestion and visible sebum activity. This is a water based serum that can be applied to the entire face to help reduce large pores. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/ordnia.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Moisturizer:</h3>
+          <p class="productname">Tatcha Water Cream</p>
+          <p class="body">Japanese wild rose is used to tighten pores and helps smooth skin texture. Japanese leopard lily is also used in this product to reduce oil production which will help keep pores from clogging. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/watercream.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Additional Treatment:</h3>
+          <p class="productname">Caudalie Detox Mask</p>
+          <p class="body">This natural clay mask helped improve the look of stressed skin in as little as 10 minutes. This mask helps draw out visible impurities and excess sebum to leave texture refined, pores visibly tightened, and the complexion looking luminous.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/detoxmask.png') }}" alt="" class="icon">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-3" name="tab-group-1">
+    <label for="tab-3">Anti-Aging</label>
+
+    <div class="content">
+      <h2 class="title">Suggested Products for Anti-Aging</h2>
+      <div class="groups">
+        <div class="details">
+          <h3>Cleanser:</h3>
+          <p class="productname">Dermalogica Skin Resurfacing Cleanser</p>
+          <p class="body">This cleanser contains a highly active lactic acid concentrate that retexturizes skin suffering from visible signs of aging by removing dulling surface debris and accelerating skin renewal.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/resurfacing.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Serum:</h3>
+          <p class="productname">SkinCeuticals C E Ferulic Serum</p>
+          <p class="body">This serum contains an antioxidant combination of ferulic acid and pure vitamin C and E to enhance your skin's protection against environmental damage. This formula also helps improves teh signs of aging which reduuces the appearance of lines and wrinkles while firming and brightening your complexion.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/ferulic.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Moisturizer:</h3>
+          <p class="productname">Adaptogen Deep Moisture Cream</p>
+          <p class="body">This moisturizer contains squalane, ashwagandha, and fermented reishi. These ingredients combined helps boost hydration and combats signs of aging.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/adaptogen.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Additional Treatment:</h3>
+          <p class="productname">Nuface Trinity</p>
+          <p class="body">This is a facial toning device which uses microcurrents to help tone, lift, and contour facial miscles while reducing the appearance of fine lines and wrinkles.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/nuface.png') }}" alt="" class="icon">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-4" name="tab-group-1">
+    <label for="tab-4">Pigmentation</label>
+
+    <div class="content">
+      <h2 class="title">Suggested Products for Pigmentation</h2>
+      <div class="groups">
+        <div class="details">
+          <h3>Cleanser:</h3>
+          <p class="productname">La Roche-Posay Pigmentclar Cleanser</p>
+          <p class="body">This cleanser contains lipo-hydroxy acid which helps improve the texture of dark spots, uneven skin tone, and rough texture while enhancing the overall brightness and radiance.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/pigmentclar.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Serum:</h3>
+          <p class="productname">Kiehls Clearly Corrective Solution</p>
+          <p class="body">This serum contains vitamin C and salicylic acide to help reduce the look of dark spots, hyperpigmentation, and post-acne marks. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/kiehls.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Moisturizer:</h3>
+          <p class="productname">Neutrogena Correcting Cream</p>
+          <p class="body">This daily brightening cream helps even out skin tone in just one week with the help of retinol, vitamin c, and hyaluronic acid. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/correcting.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Additional Treatment:</h3>
+          <p class="productname">Drunk Elephant TLC Babyfacial</p>
+          <p class="body">This mask resurfaces skin to visibly reveal greater clarity and improves skin texture and tone. Use no more than once a week because this contains alot of strong ingredients. Follow with something super hydrating like a face oil.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/babyfacial.png') }}" alt="" class="icon">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+<div class="tab">
+  <input type="radio" id="tab-5" name="tab-group-1">
+  <label for="tab-5">Dryness</label>
+
+  <div class="content">
+    <h2 class="title">Suggested Products for Dryness</h2>
+    <div class="groups">
+      <div class="details">
+        <h3>Cleanser:</h3>
+        <p class="productname">Glossier Milky Jelly Cleanser</p>
+        <p class="body">A nourishing (and pH-balanced), creamy gel face wash which is formulated with five skin conditioners that will leave your skin feeling baby soft.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/milkyjelly.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Serum:</h3>
+        <p class="productname">Vichy Mineral 89</p>
+        <p class="body">This serum contains a combination of volcanic water and hyaluronic acid. Vichy volcanic water is sourced from french volcanoes and features 15 minerals to help strengthen the skin's barrier and protects skin from environmental damage. Pure hyaluronic Acid helps hydrate and plump the skin.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/vichy.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Moisturizer:</h3>
+        <p class="productname">Embryolisse Lait Creme Concentre</p>
+        <p class="body">This moisturizer contains soy proteins, soothing aloe vera, and nourishing shea butter to keep your skin hydrated and plump.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/lait.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Additional Treatment</h3>
+        <p class="productname">Sunday Riley CEO Glow</p>
+        <p class="body">Sunday Riley CEO Glow Face Oil recharges the radiance of your skin with this lightweight treatment oil infused with advanced Vitamin C, golden turmeric, and nutrient-rich extracts.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/ceo.png') }}" alt="" class="icon">
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="tab">
+  <input type="radio" id="tab-6" name="tab-group-1">
+  <label for="tab-6">Dark Circles/ Eyebags</label>
+
+  <div class="content">
+    <h2 class="title">Suggested Products for Dark Circles and Eyebags</h2>
+    <div class="groups">
+      <div class="details">
+        <h3>Cleanser:</h3>
+        <p class="productname">SkinCeuticals LHA Cleanser</p>
+        <p class="body">This gel cleanser uses a combination of LHA, glycolic and salicylic acid to encourage cell renewal resulting in a more refined skin texture, even skin tone and a brighter appearance. </p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/lha.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Serum:</h3>
+        <p class="productname">La Mer The Lifting Eye Serum</p>
+        <p class="body">A lightweight serum, infused with the legendary cell-renewing elixir of Miracle Broth, that lifts the look of the eye area for a firmer appearance.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/lifting.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Moisturizer:</h3>
+        <p class="productname">CeraVe Eye Repair Cream</p>
+        <p class="body">This eye cream features a marine and botanical complex to help brighten the entire eye area. It also helps to reduce the appearance of dark circles and eye puffiness.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/repaircream.png') }}" alt="" class="icon">
+      </div>
+    </div>
+    <div class="groups">
+      <div class="details">
+        <h3>Additional Treatment:</h3>
+        <p class="productname">PMD Microderm Tool</p>
+        <p class="body">This at home microdermabrasion device helps diminish the appearance of fine lines and wrinkles by encouraging collagen and cell turnover.</p>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='img/pmd.png') }}" alt="" class="icon">
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="tab">
+  <input type="radio" id="tab-7" name="tab-group-1">
+  <label for="tab-7">Wrinkles</label>
+
+    <div class="content">
+      <h2 class="title">Suggested Products for Wrinkles</h2>
+      <div class="groups">
+        <div class="details">
+          <h3>Cleanser:</h3>
+          <p class="productname">Tata Harper Regenerating Cleanser</p>
+          <p class="body">This is a 100% natural formula that buffs and polishes with BHA and apricot microspheres to reveal smooth, radiant healthy looking skin. </p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/regenerating.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Serum:</h3>
+          <p class="productname">The Inkey List Retinol Serum</p>
+          <p class="body">This serum is derived from vitamin A, which helps to target the signs of aging. Released slowly, this serum helps to reduce fine lines and wrinkles with less risk of irritation.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/inkeyretinol.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Moisturizer:</h3>
+          <p class="productname">Olay Regenerist Micro-Sculpting Cream</p>
+          <p class="body">This face moisturizer is designed to visibly diminish fine lines and wrinkles while hydrating to improve elasticity and firmness for a lifted look.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/olaysculpting.png') }}" alt="" class="icon">
+        </div>
+      </div>
+      <div class="groups">
+        <div class="details">
+          <h3>Additional Treatment:</h3>
+          <p class="productname">Supergoop Unseen Sunscreen</p>
+          <p class="body">Sunscreen is one of the most important product to add to your skincare routine. Protection from UVA/UVB helps protect you from signs of aging. This sunscreen is oil-free and water resistant. This can be used as a makeup primer as well.</p>
+        </div>
+        <div class="icon">
+          <img src="{{ url_for('static', filename='img/supergoop.png') }}" alt="" class="icon">
+        </div>
+      </div>
+    </div> 
+  </div>
+
+</div>
+<img class="img" src="https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBsYW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="plant">
+</body>
+</html>
